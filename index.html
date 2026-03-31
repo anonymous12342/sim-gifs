@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC Simulation Animations</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #16213e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card-info {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #00d4ff;
+            margin-bottom: 5px;
+        }
+        .card-details {
+            font-size: 0.9em;
+            color: #aaa;
+        }
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+        .tag-weather { background: #0f4c75; }
+        .tag-policy { background: #3d5a80; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>HVAC Building Simulation Animations</h1>
+    <p class="subtitle">Visualizing HVAC control policies across different buildings and weather conditions</p>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="gifs/building_0015_cold_winter_all_off.gif" alt="Building 0015 - Cold Winter - All Off" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0015</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Cold Winter</span>
+                    <span class="tag tag-policy">All Off</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/building_0015_hot_summer_all_off.gif" alt="Building 0015 - Hot Summer - All Off" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0015</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Hot Summer</span>
+                    <span class="tag tag-policy">All Off</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/building_0015_temperate_all_on.gif" alt="Building 0015 - Temperate - All On" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0015</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Temperate</span>
+                    <span class="tag tag-policy">All On</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/building_0007_temperate_bang_bang.gif" alt="Building 0007 - Temperate - Bang Bang" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0007</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Temperate</span>
+                    <span class="tag tag-policy">Bang-Bang</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/building_0007_tropical_bang_bang.gif" alt="Building 0007 - Tropical - Bang Bang" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0007</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Tropical</span>
+                    <span class="tag tag-policy">Bang-Bang</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/building_0002_mild_winter_all_off.gif" alt="Building 0002 - Mild Winter - All Off" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0002</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Mild Winter</span>
+                    <span class="tag tag-policy">All Off</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/building_0041_mild_summer_all_off.gif" alt="Building 0041 - Mild Summer - All Off" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0041</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Mild Summer</span>
+                    <span class="tag tag-policy">All Off</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/building_0066_mild_winter_all_off.gif" alt="Building 0066 - Mild Winter - All Off" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0066</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Mild Winter</span>
+                    <span class="tag tag-policy">All Off</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/example_office_cold_winter_all_off.gif" alt="Example Office - Cold Winter - All Off" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Example Office</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Cold Winter</span>
+                    <span class="tag tag-policy">All Off</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/minimal_hot_summer_all_off.gif" alt="Minimal Building - Hot Summer - All Off" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Minimal Building</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Hot Summer</span>
+                    <span class="tag tag-policy">All Off</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>HVAC Building Simulation Environment</p>
+    </footer>
+</body>
+</html>
