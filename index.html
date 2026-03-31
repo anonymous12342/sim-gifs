@@ -64,6 +64,7 @@
         }
         .tag-weather { background: #0f4c75; }
         .tag-policy { background: #3d5a80; }
+        .tag-bangbang { background: #e63946; }
         footer {
             text-align: center;
             margin-top: 40px;
@@ -74,66 +75,11 @@
 </head>
 <body>
     <h1>HVAC Building Simulation Animations</h1>
-    <p class="subtitle">Visualizing HVAC control policies across different buildings and weather conditions</p>
+    <p class="subtitle">Visualizing HVAC control policies across different building configurations</p>
 
     <div class="gallery">
         <div class="card">
-            <img src="gifs/building_0015_cold_winter_all_off.gif" alt="Building 0015 - Cold Winter - All Off" loading="lazy">
-            <div class="card-info">
-                <div class="card-title">Building 0015</div>
-                <div class="card-details">
-                    <span class="tag tag-weather">Cold Winter</span>
-                    <span class="tag tag-policy">All Off</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="gifs/building_0015_hot_summer_all_off.gif" alt="Building 0015 - Hot Summer - All Off" loading="lazy">
-            <div class="card-info">
-                <div class="card-title">Building 0015</div>
-                <div class="card-details">
-                    <span class="tag tag-weather">Hot Summer</span>
-                    <span class="tag tag-policy">All Off</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="gifs/building_0015_temperate_all_on.gif" alt="Building 0015 - Temperate - All On" loading="lazy">
-            <div class="card-info">
-                <div class="card-title">Building 0015</div>
-                <div class="card-details">
-                    <span class="tag tag-weather">Temperate</span>
-                    <span class="tag tag-policy">All On</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="gifs/building_0007_temperate_bang_bang.gif" alt="Building 0007 - Temperate - Bang Bang" loading="lazy">
-            <div class="card-info">
-                <div class="card-title">Building 0007</div>
-                <div class="card-details">
-                    <span class="tag tag-weather">Temperate</span>
-                    <span class="tag tag-policy">Bang-Bang</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="gifs/building_0007_tropical_bang_bang.gif" alt="Building 0007 - Tropical - Bang Bang" loading="lazy">
-            <div class="card-info">
-                <div class="card-title">Building 0007</div>
-                <div class="card-details">
-                    <span class="tag tag-weather">Tropical</span>
-                    <span class="tag tag-policy">Bang-Bang</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="gifs/building_0002_mild_winter_all_off.gif" alt="Building 0002 - Mild Winter - All Off" loading="lazy">
+            <img src="gifs/building_0002_mild_winter_all_off.gif" alt="Building 0002" loading="lazy">
             <div class="card-info">
                 <div class="card-title">Building 0002</div>
                 <div class="card-details">
@@ -144,18 +90,51 @@
         </div>
 
         <div class="card">
-            <img src="gifs/building_0041_mild_summer_all_off.gif" alt="Building 0041 - Mild Summer - All Off" loading="lazy">
+            <img src="gifs/building_0007_temperate_bang_bang.gif" alt="Building 0007" loading="lazy">
             <div class="card-info">
-                <div class="card-title">Building 0041</div>
+                <div class="card-title">Building 0007</div>
                 <div class="card-details">
-                    <span class="tag tag-weather">Mild Summer</span>
+                    <span class="tag tag-weather">Temperate</span>
+                    <span class="tag tag-bangbang">Bang-Bang</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/building_0009_mild_winter_all_off.gif" alt="Building 0009" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0009</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Mild Winter</span>
                     <span class="tag tag-policy">All Off</span>
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <img src="gifs/building_0066_mild_winter_all_off.gif" alt="Building 0066 - Mild Winter - All Off" loading="lazy">
+            <img src="gifs/building_0015_temperate_bang_bang.gif" alt="Building 0015" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0015</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Temperate</span>
+                    <span class="tag tag-bangbang">Bang-Bang</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/building_0041_cold_winter_all_off.gif" alt="Building 0041" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Building 0041</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Cold Winter</span>
+                    <span class="tag tag-policy">All Off</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/building_0066_mild_winter_all_off.gif" alt="Building 0066" loading="lazy">
             <div class="card-info">
                 <div class="card-title">Building 0066</div>
                 <div class="card-details">
@@ -166,7 +145,7 @@
         </div>
 
         <div class="card">
-            <img src="gifs/example_office_cold_winter_all_off.gif" alt="Example Office - Cold Winter - All Off" loading="lazy">
+            <img src="gifs/example_office_cold_winter_all_off.gif" alt="Example Office" loading="lazy">
             <div class="card-info">
                 <div class="card-title">Example Office</div>
                 <div class="card-details">
@@ -177,11 +156,22 @@
         </div>
 
         <div class="card">
-            <img src="gifs/minimal_hot_summer_all_off.gif" alt="Minimal Building - Hot Summer - All Off" loading="lazy">
+            <img src="gifs/minimal_cold_winter_all_off.gif" alt="Minimal Building" loading="lazy">
             <div class="card-info">
                 <div class="card-title">Minimal Building</div>
                 <div class="card-details">
-                    <span class="tag tag-weather">Hot Summer</span>
+                    <span class="tag tag-weather">Cold Winter</span>
+                    <span class="tag tag-policy">All Off</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gifs/office_3floor_cold_winter_all_off.gif" alt="Office 3-Floor" loading="lazy">
+            <div class="card-info">
+                <div class="card-title">Office 3-Floor</div>
+                <div class="card-details">
+                    <span class="tag tag-weather">Cold Winter</span>
                     <span class="tag tag-policy">All Off</span>
                 </div>
             </div>
